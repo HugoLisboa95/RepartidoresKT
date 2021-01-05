@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="apolo.repartidores.com">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="Android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="andtoid.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="andtoid.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RepartidoresKT3"
+        android:usesCleartextTraffic="true">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="apolo.repartidores.com.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".utilidades.Sincronizacion" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".configurar.ConfigurarUsuario" />
+        <activity android:name=".configurar.AcercaDe" />
+        <activity android:name=".prueba.VentanaAuxiliar" />
+        <activity android:name=".carga.CheckList"
+            android:windowSoftInputMode="adjustNothing"></activity>
+        <activity android:name=".carga.ListaPlanillas"
+            android:windowSoftInputMode="adjustNothing"></activity>
+        <activity android:name=".carga.ListaClientes"
+            android:windowSoftInputMode="adjustNothing"></activity>>
+        <activity android:name=".carga.sd.SolicitudDevolucion"
+            android:windowSoftInputMode="adjustNothing"></activity>
+
+        <activity
+            android:name=".utilidades.Mapa"
+            android:label="Map" />
+
+        <!--Datos para abrir el mapa-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCKcfr0aHwMZPPau7HD291NbPT3dWo9K3g" />
+    </application>
+
+</manifest>

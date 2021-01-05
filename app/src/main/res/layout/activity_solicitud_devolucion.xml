@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carga.sd.SolicitudDevolucion"
+    android:orientation="vertical"
+    android:background="@color/fondoOscuro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/accion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:id="@+id/llTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_generico"
+                android:background="#ddd"/>
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDSYSTEM"
+                android:textStyle="bold"
+                android:background="#ddd"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/fondoOscuro">
+            <EditText
+                android:id="@+id/etCodCliente"
+                android:layout_width="80dp"
+                android:gravity="end|center_vertical"
+                android:enabled="false"
+                android:editable="false"
+                android:inputType="none"
+                style="@style/textoCuadriculaOscura"/>
+            <EditText
+                android:id="@+id/etDescCliente"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:enabled="false"
+                android:editable="false"
+                android:inputType="none"
+                style="@style/textoCuadriculaOscura"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvProductos"
+                android:layout_weight="1"
+                android:text="Productos"
+                android:background="@color/tial"
+                android:onClick="mostrarContenido"
+                style="@style/tabContenidos"/>
+            <TextView
+                android:id="@+id/tvDetalle"
+                android:layout_weight="1"
+                android:text="Detalle"
+                android:onClick="mostrarContenido"
+                style="@style/tabContenidos"/>
+            <TextView
+                android:id="@+id/tvEnviados"
+                android:layout_weight="1"
+                android:text="Enviados"
+                android:onClick="mostrarContenido"
+                style="@style/tabContenidos"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#757575"/>
+
+        <LinearLayout
+            android:id="@+id/llProductos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/sd_productos"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/sd_detalle"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEnviados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/sd_enviados"/>
+        </LinearLayout>
+
+
+</LinearLayout>

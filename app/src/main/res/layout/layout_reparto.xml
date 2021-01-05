@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/verdeOscuro"
+            android:text="Actualizar"/>
+        <Button
+            android:id="@+id/btMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/azulMarino"
+            android:text="Mapa"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTabBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center|center_vertical"
+        android:padding="5dp"
+        android:background="@color/fondoFooter"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#AAAAAA"
+            android:layout_margin="2dp"
+            android:layout_weight="1.2">
+            <Spinner
+                android:id="@+id/spTabBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"/>
+
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/etTabBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:layout_margin="2dp"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/btTabBuscar"
+            android:text="Buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:layout_margin="0dp"
+            />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:text="Entrada"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:text="Salida"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Codigo"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:text="Razon social"
+                    android:gravity="left|center_vertical"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:text="Cliente"
+                    android:gravity="left|center_vertical"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Facturas"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Total"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Zona"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Ciudad"
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Saltar lleg."
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Nueva Ubic."
+                    style="@style/cabeceraTabla"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:text="Restaurar"
+                    style="@style/cabeceraTabla"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvClientes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/verdeOscuro"
+            android:text="Entrega"/>
+        <Button
+            android:id="@+id/btCobranza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/azulMarino"
+            android:text="Cobranza"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/fondoFooter"
+            android:text="SD"/>
+        <Button
+            android:id="@+id/btRetornar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/azulMarino"
+            android:text="Retornar"/>
+    </LinearLayout>
+
+</LinearLayout>

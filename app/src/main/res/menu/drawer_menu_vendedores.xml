@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/repCarga"
+            android:icon="@drawable/ic_carga"
+            android:title="Carga"/>
+        <item
+            android:id="@+id/repSincronizar"
+            android:icon="@drawable/ic_sincronizar"
+            android:title="Sincronizar"/>
+<!--        <item-->
+<!--            android:id="@+id/vendInformes"-->
+<!--            android:icon="@drawable/ic_graficos"-->
+<!--            android:title="Informes"/>-->
+        <item
+            android:id="@+id/repConfigurar"
+            android:icon="@drawable/ic_configurar"
+            android:title="Configurar"/>
+        <item
+            android:id="@+id/repActualizar"
+            android:icon="@drawable/ic_actualizar"
+            android:title="Actualizar versión"/>
+        <item
+            android:id="@+id/repSalir"
+            android:icon="@drawable/ic_persona"
+            android:title="Salir"/>
+    </group>
+
+</menu>

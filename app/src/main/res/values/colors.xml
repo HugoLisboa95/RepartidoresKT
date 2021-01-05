@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="tial">#00574B</color>
+    <color name="verdeApolo">#85C229</color>
+    <!--    <color name="verdeApoloCabecera">#00574B</color>-->
+    <color name="verdeApoloCabecera">#CC85C229</color>
+    <color name="fondoOscuro">#08080C</color>
+    <color name="textoClaro">#CCCCCC</color>
+    <color name="textoClaroHint">#242424</color>
+    <color name="textoHint">#242424</color>
+    <color name="fondoCabecera">#0F3502</color>
+    <color name="fondoFooter">#6B0000</color>
+    <color name="verdeOscuro">#193700</color>
+    <color name="azulMarino">#00055C</color>
+    <!--    <color name="verdeCabecera">#55009900"</color>-->
+    <color name="quantum_deeporange900">#CD6B00</color>
+    <color name="grisTab">#474747</color>
+    <color name="grisClaro">#C8C8C8</color>
+    <color name="verdeTab">#116600</color>
+    <color name="etDeshabilitado">#B8B8B8</color>
+</resources>

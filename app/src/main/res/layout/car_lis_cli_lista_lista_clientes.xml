@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbEntrada"
+            android:layout_width="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/textoTabla2"/>
+
+        <CheckBox
+            android:id="@+id/cbSalida"
+            android:layout_width="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="70dp"
+            android:text="Codigo"
+            style="@style/textoTabla2"/>
+        
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="50dp"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="200dp"
+            android:text="Razon social"
+            android:gravity="left|center_vertical"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="200dp"
+            android:text="Cliente"
+            android:gravity="left|center_vertical"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="120dp"
+            android:text="Facturas"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="120dp"
+            android:text="Total"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="120dp"
+            android:text="Zona"
+            style="@style/textoTabla2"/>
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="120dp"
+            android:text="Ciudad"
+            style="@style/textoTabla2"/>
+
+        <Button
+            android:id="@+id/btSaltarLlegada"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="8dp"
+            android:backgroundTint="@color/azulMarino"
+            android:text="Solicitar"/>
+
+        <Button
+            android:id="@+id/btNuevaUbicacion"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="8dp"
+            android:backgroundTint="@color/verdeOscuro"
+            android:text="Registrar"/>
+
+        <Button
+            android:id="@+id/btRestaurar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="8dp"
+            android:backgroundTint="@color/fondoFooter"
+            android:text="Restaurar"/>
+
+    </LinearLayout>
+    
+</LinearLayout>

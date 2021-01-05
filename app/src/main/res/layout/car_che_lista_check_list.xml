@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:scrollbars="horizontal"
+        style="@style/textoTabla"/>
+
+    <CheckBox
+        android:id="@+id/cbPendiente"
+        android:layout_width="30dp"
+        android:layout_column="2"
+        android:checked="true"
+        style="@style/textoTabla"/>
+    <CheckBox
+        android:id="@+id/cbSi"
+        android:layout_width="30dp"
+        android:layout_column="2"
+        android:checked="false"
+        style="@style/textoTabla"/>
+    <CheckBox
+        android:id="@+id/cbNo"
+        android:layout_width="30dp"
+        android:layout_column="2"
+        android:checked="false"
+        style="@style/textoTabla"/>
+    <EditText
+        android:id="@+id/tv2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:scrollbars="horizontal"
+        android:enabled="false"
+        style="@style/textoTabla"/>
+
+</LinearLayout>

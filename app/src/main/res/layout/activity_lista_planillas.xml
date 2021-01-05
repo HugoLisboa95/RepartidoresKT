@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carga.ListaPlanillas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/barra_titulo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/tial">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/cabeceraTabla"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Número" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_weight="1"
+                android:text="Fecha"
+                style="@style/cabeceraTabla"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_weight="1"
+                android:text="Tipo"
+                style="@style/cabeceraTabla"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_weight="1"
+                android:text=""
+                style="@style/cabeceraTabla"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvListaPlanillas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grisClaro">
+
+        <Button
+            android:id="@+id/btVerPlanilla"
+            style="@style/boton"
+            android:backgroundTint="@color/verdeOscuro"
+            android:layout_weight="1"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_weight="1"
+            android:backgroundTint="@color/fondoFooter"
+            android:text="Cancelar"
+            style="@style/boton"/>
+
+        <ImageButton
+            android:id="@+id/ibtCerrar"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_enviar"
+            style="@style/boton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grisClaro">
+
+        <Button
+            android:id="@+id/btVerMapa"
+            android:backgroundTint="@color/azulMarino"
+            android:layout_weight="1"
+            android:text="Ver ubicación de los clientes"
+            style="@style/boton" />
+
+        <ImageButton
+            android:id="@+id/ibtCaja"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_caja_registradora"
+            style="@style/boton"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

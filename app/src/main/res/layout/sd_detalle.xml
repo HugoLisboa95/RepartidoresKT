@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:width="30sp"
+                    android:gravity="center|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="40sp"
+                    android:text="Nro"
+                    android:layout_gravity="end|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="50dp"
+                    android:text="Cod"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="240sp"
+                    android:gravity="start|center_vertical"
+                    android:text="Descripción"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="40dp"
+                    android:text="UM"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="50dp"
+                    android:text="Cant."
+                    android:gravity="end|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="80dp"
+                    android:gravity="end|center_vertical"
+                    android:text="Pago"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="80sp"
+                    android:gravity="end|center_vertical"
+                    android:text="Monto"
+                    style="@style/cabeceraSubTabla"/>
+            </TableRow>
+
+            <ListView
+                android:id="@+id/lvDetalle"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content">
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="610dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/fondoFooter">
+                <TextView
+                    style="@style/cabeceraTabla"
+                    android:layout_width="490dp"
+                    android:background="@color/fondoFooter"
+                    android:textColor="@color/textoClaro"
+                    android:gravity="right|center_vertical"
+                    android:text="Total"/>
+
+                <TextView
+                    android:id="@+id/etTotalDetalle"
+                    android:layout_width="120dp"
+                    android:gravity="right|center_vertical"
+                    android:text="0"
+                    style="@style/etDetalleDeshabilitado"/>
+            </LinearLayout>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="60dp"
+        android:text="Cod"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="250dp"
+        android:text="Descripcion"
+        android:gravity="start|center_vertical"
+        style="@style/textoSubTabla"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="40dp"
+        android:text="UM"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="120dp"
+        android:text="Referencia"
+        android:gravity="start|center_vertical"
+        style="@style/textoSubTabla"/>
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="120dp"
+        android:text="Cod. de Barra"
+        android:gravity="end|center_vertical"
+        style="@style/textoSubTabla"/>
+
+</LinearLayout>

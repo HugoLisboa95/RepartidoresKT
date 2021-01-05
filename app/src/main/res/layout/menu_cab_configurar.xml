@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/header_configurar_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="25dp"
+        android:gravity="left"
+        android:background="@drawable/fondo_cabecera"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/configurar_cabecera"
+
+            />
+
+        <TextView
+            android:id="@+id/tvTituloMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvNombreVend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Vendedor"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/tvCodigoVend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="511-Tradicional Apolo"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

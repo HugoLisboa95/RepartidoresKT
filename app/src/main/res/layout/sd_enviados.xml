@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:width="50dp"
+                    android:text="Ref."
+                    android:gravity="end|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="40sp"
+                    android:text="Cli"
+                    android:layout_gravity="end|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="50dp"
+                    android:text="Cod"
+                    android:gravity="end|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="240sp"
+                    android:gravity="start|center_vertical"
+                    android:text="Descripción"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="40dp"
+                    android:text="UM"
+                    style="@style/cabeceraSubTabla"/>
+
+                <TextView
+                    android:width="50dp"
+                    android:text="Cant"
+                    android:layout_gravity="end|center_vertical"
+                    style="@style/cabeceraSubTabla"/>
+            </TableRow>
+
+            <ListView
+                android:id="@+id/lvEnviado"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:paddingTop="1dip"
+                android:scrollbars="none" >
+            </ListView>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
